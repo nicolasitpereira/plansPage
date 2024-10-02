@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+}
+
+body {
+    background: #E3E7E8;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    font-weight: 500;
+}
+
+.option {
+    background-color: white;
+    width: 400px;
+    height: 40px;
+    border-radius: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.option_mensal, .option_trimestral {
+    font-weight: bold;
+    border-radius: 100px;
+    width: 48%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    text-align: center;
+}
+
+.option_mensal {
+    background-color: #59A5D8;
+    color: white;
+}
+
+.option_trimestral {
+    background-color: white;
+    color: #000;
+    border: 1px solid #59A5D8;
+}
+
+.plans {
+    margin: auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap; /* Adiciona a capacidade de empilhar os cards */
+}
+
+.plan, .plan-pro, .plan-pro-plus {
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.238);
+    background-color: white;
+    border-radius: 20px;
+    width: 300px;
+    height: auto;
+    padding: 15px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.plan-pro-plus {
+    background-image: linear-gradient(to bottom, #84D2F6, #59A5D8);
+}
+
+.plan-header {
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background: #59A5D8;
+    border-radius: 10px;
+    width: 70px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+#pro-plus-header {
+    background: white;
+    border: 2px solid #59A5D8;
+    color: #133C55;
+}
+
+.plan-title, .plan-title-pro {
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size: 24pt;
+    font-weight: bold;
+}
+
+.plan-title-pro {
+    margin-left: 0; /* Remover margens para melhor centralização */
+}
+
+.value {
+    font-family: "Barlow", sans-serif;
+    font-size: 26pt;
+    font-weight: 900;
+}
+
+span {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.description-plan-text {
+    font-size: 14px;
+    margin: 20px;
+    color: #938A8A;
+    margin-bottom: 15px;
+}
+
+#description-pro-plus {
+    color: rgba(0, 0, 0, 0.564);
+}
+
+hr {
+    background-color: #59A5D8;
+}
+
+.plan-benefits {
+    margin: 15px;
+    font-size: 14px;
+}
+
+.benefit {
+    margin-top: 20px;
+}
+
+.start-button, .start-button-pro-plus {
+    display: inline-block;
+    background-color: white;
+    color: gray;
+    font-weight: bold;
+    border: 2px solid #59A5D8;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-top: 20px;
+}
+
+.start-button-pro-plus {
+    margin-top: 30px;
+}
+
+.start-button:hover, .start-button-pro-plus:hover {
+    background-color: #59A5D8;
+    color: white;
+}
+
+.start-button-pro-plus:hover {
+    background-color: #133C55;
+}
+
+/* Responsividade para smartphones */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .plans {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .option {
+        width: 90%;
+    }
+
+    .plan, .plan-pro, .plan-pro-plus {
+        margin: auto;
+        width: 3o0px; /* Ajuste a largura dos cards */
+        height: auto;
+    }
+
+    .plan-title, .plan-title-pro {
+        font-size: 20pt;
+    }
+
+    .value {
+        font-size: 22pt;
+    }
+
+    .description-plan-text {
+        font-size: 12px;
+    }
+
+    .start-button, .start-button-pro-plus {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
